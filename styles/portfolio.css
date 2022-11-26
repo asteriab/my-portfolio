@@ -36,6 +36,18 @@
   padding: 10px;
 }
 
+.navbar-toggler {
+  text-align: center;
+  border-color: white;
+
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  color: white;
+  line-height: normal;
+}
+
 .active {
   color: var(--secondary-color) !important;
   text-decoration: underline;
@@ -100,7 +112,7 @@ ul {
 h1 {
   font-size: 76px;
   font-family: var(--head-font);
-  font-weight: 700;
+  font-weight: 900;
   color: var(--accent-color);
 }
 
@@ -170,4 +182,14 @@ h2 {
 
 .project-img {
   width: 400px;
+}
+
+@media (max-width:767px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .projects h2 {
+    font-size: 50px;
+  }
 }
