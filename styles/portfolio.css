@@ -68,9 +68,6 @@ ul {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.home-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,12 +76,13 @@ ul {
 
 .social-media {
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
   font-size: 22px;
   gap: 15px;
   position: sticky;
-  top: 35%;
+  align-items: flex-end;
+  top: 300px;
+  align-self: flex-start;
 }
 
 .social-media a {
