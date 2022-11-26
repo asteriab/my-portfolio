@@ -1,0 +1,112 @@
+:root {
+  --head-font: font-family: 'PT Serif', serif;
+--main-font: font-family: 'Montserrat', sans-serif;
+--accent-color: #FFCE00;
+--secondary-color:#00BE99;
+--header-color:#242424;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+    background-color: var(--header-color);
+}
+.nav-link {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+color: var(--secondary-color);
+text-decoration: underline;
+}
+.navbar-brand {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+.active {
+    color: var(--secondary-color) !important;
+    text-decoration: underline;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  height: 90vh;
+  flex-wrap: wrap;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 34px;
+  gap: 15px;
+}
+
+.social-media a{
+    color: black;
+    border-radius: 8px;
+    width: 50px;
+    height: 50x;
+    text-align: center;
+    background-color: var(--accent-color);
+}
+
+.social-media a:hover {
+background-color: var(--secondary-color);
+}
+
+.introduction p {
+  font-size: 36px;
+  font-family: var(--head-font);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 98px;
+  font-family: var(--head-font);
+  font-weight: 900;
+  color: var(--accent-color);
+}
+h2 {
+  font-size: 36px;
+  font-family: var(--head-font);
+  font-weight: bold;
+  
+}
+.button {
+    display: block;
+    background-color: var(--accent-color);
+    padding: 20px;
+    font-size: 28px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 10px rgba(255, 206, 0, 0.3);
+}
+.button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 20px 10px rgba(0, 190, 153, 0.3);
+}
+.main-img {
+    width: 500px;
+}
