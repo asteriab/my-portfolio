@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <title>Mariana Balanchuk - Front-End Developer</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">MB</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -45,20 +45,20 @@
             </div>
         </nav>
     </header>
-    <main>
 
-        <div class="page-container">
-            <div class="introduction">
+
+    <main class="container">
+        <div class="home-container">
+            <div class="introduction col-7">
                 <p>Hi, I'am</p>
                 <h1>Mariana Balanchuk</h1>
                 <h2>Front-End developer from Ukraine</h2>
                 <button class="button">Download CV</button>
             </div>
-            <div>
+            <div class="col-4">
                 <img src="/images/main-image.svg" class="main-img" alt="">
             </div>
-
-            <div class="social-media">
+            <div class="social-media col-1">
                 <a href="https://www.instagram.com/mariana.balanchuk/" target="_blank"><i
                         class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/mariana-balanchuk/" target="_blank"><i
@@ -66,29 +66,33 @@
                 <a href="https://github.com/asteriab" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="mailto:mariana.balanchuk@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
             </div>
-
-
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis alias qui, ad praesentium consequuntur
-                voluptatum possimus sed consequatur iusto cupiditate non explicabo perferendis quisquam, dignissimos,
-                exercitationem at sint reiciendis labore.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis alias qui, ad praesentium consequuntur
-                voluptatum possimus sed consequatur iusto cupiditate non explicabo perferendis quisquam, dignissimos,
-                exercitationem at sint reiciendis labore.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis alias qui, ad praesentium consequuntur
-                voluptatum possimus sed consequatur iusto cupiditate non explicabo perferendis quisquam, dignissimos,
-                exercitationem at sint reiciendis labore.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis alias qui, ad praesentium consequuntur
-                voluptatum possimus sed consequatur iusto cupiditate non explicabo perferendis quisquam, dignissimos,
-                exercitationem at sint reiciendis labore.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis alias qui, ad praesentium consequuntur
-                voluptatum possimus sed consequatur iusto cupiditate non explicabo perferendis quisquam, dignissimos,
-                exercitationem at sint reiciendis labore.</div>
-
-
-
         </div>
 
 
+
+        <div class="projects" id="projects">
+            <h2 class="col-12">My Projects</h2>
+
+            <ul class="col-12 row">
+                <li class="col-4 project">
+                    <a href="https://graceful-kleicha-63eb8d.netlify.app/" target="_blank"><img
+                            src="/images/pizza-landing-page.png" class="project-img" alt=""></a>
+                    <h4>Pizza Landing Page</h4>
+                    <button class="view-button"><a href="https://graceful-kleicha-63eb8d.netlify.app/"
+                            target="_blank">View
+                            Project</a>
+                    </button>
+                </li>
+                <li class="col-4 project">
+                    <a href="https://frabjous-meringue-af1318.netlify.app/" target="_blank"><img
+                            src="/images/weather-app.png" class="project-img" alt=""></a>
+                    <h4>Weather App</h4>
+                    <button class="view-button"> <a href="https://frabjous-meringue-af1318.netlify.app/"
+                            target="_blank">View
+                            Project</a></button>
+                </li>
+            </ul>
+        </div>
 
 
 

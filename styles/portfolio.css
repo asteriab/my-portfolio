@@ -1,9 +1,9 @@
 :root {
-  --head-font: font-family: 'PT Serif', serif;
---main-font: font-family: 'Montserrat', sans-serif;
---accent-color: #FFCE00;
---secondary-color:#E7788C;
---header-color:#242424;
+  --head-font: 'Prompt', sans-serif;
+  --main-font: 'Sarabun', sans-serif;
+  --accent-color: #FFCE00;
+  --secondary-color: #E7788C;
+  --header-color: #242424;
 }
 
 * {
@@ -11,71 +11,84 @@
 }
 
 .navbar {
-    background-color: var(--header-color);
+  background-color: var(--header-color);
+  font-family: var(--main-font);
 }
+
 .nav-link {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .nav-link:hover {
-color: var(--secondary-color);
-text-decoration: underline;
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
+
 .navbar-brand {
-    color: black;
-    font-size: 24px;
-    font-weight: 700;
-    margin: 10px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    padding: 10px;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  padding: 10px;
 }
+
 .active {
-    color: var(--secondary-color) !important;
-    text-decoration: underline;
+  color: var(--secondary-color) !important;
+  text-decoration: underline;
 }
 
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+  padding-top: 60px;
 }
 
-.page-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .social-media {
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
   font-size: 22px;
   gap: 15px;
   position: sticky;
   top: 35%;
-  left: 300px;
 }
 
-.social-media a{
-    color: black;
-    border-radius: 8px;
-    width: 30px;
-    text-align: center;
-    background-color: var(--accent-color);
+.social-media a {
+  color: black;
+  border-radius: 8px;
+  width: 30px;
+  text-align: center;
+  background-color: var(--accent-color);
 }
 
 .social-media a:hover {
-background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .introduction {
-    margin: 30vh 0;
+  margin: 25vh 0;
 }
 
 .introduction p {
@@ -87,31 +100,74 @@ background-color: var(--secondary-color);
 h1 {
   font-size: 76px;
   font-family: var(--head-font);
-  font-weight: 900;
+  font-weight: 700;
   color: var(--accent-color);
 }
+
 h2 {
   font-size: 28px;
   font-family: var(--head-font);
   font-weight: bold;
-  
+
 }
+
+.view-button,
 .button {
-    display: block;
-    background-color: var(--accent-color);
-    padding: 15px;
-    font-size: 20px;
-    font-family: var(--main-font);
-    font-weight: 700;
-    margin-top: 25px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px 10px rgba(255, 206, 0, 0.3);
+  display: block;
+  background-color: var(--accent-color);
+  font-family: var(--main-font);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 10px rgba(255, 206, 0, 0.3);
 }
-.button:hover {
-    background-color: var(--secondary-color);
-    box-shadow: 0px 0px 20px 10px rgba(0, 190, 153, 0.3);
+
+.button {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 25px;
 }
+
+.button:hover,
+.view-button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 20px 10px rgba(0, 190, 153, 0.3);
+}
+
+.view-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px auto;
+}
+
+.view-button a {
+  color: black;
+  text-decoration: none;
+}
+
 .main-img {
-    width: 350px;
+  width: 350px;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects h2 {
+  font-family: var(--head-font);
+  font-weight: 900;
+  font-size: 56px;
+  color: var(--accent-color);
+  padding: 30px;
+}
+
+.project h4 {
+  padding: 20px;
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+
+.project-img {
+  width: 400px;
 }
