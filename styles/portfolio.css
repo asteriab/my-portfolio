@@ -49,7 +49,6 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 90vh;
   flex-wrap: wrap;
 }
 
@@ -58,6 +57,9 @@ body {
   flex-direction: column;
   font-size: 22px;
   gap: 15px;
+  position: sticky;
+  top: 35%;
+  left: 300px;
 }
 
 .social-media a{
@@ -70,6 +72,10 @@ body {
 
 .social-media a:hover {
 background-color: var(--secondary-color);
+}
+
+.introduction {
+    margin: 30vh 0;
 }
 
 .introduction p {
