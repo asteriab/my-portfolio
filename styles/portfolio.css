@@ -211,6 +211,11 @@ h2 {
   width: 350px;
 }
 
+.center-btn {
+  display: block;
+  margin: 25px auto;
+}
+
 @media (max-width:767px) {
   h1 {
     font-size: 56px;
