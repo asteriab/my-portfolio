@@ -39,7 +39,7 @@
 .navbar-toggler {
   text-align: center;
   border-color: white;
-
+  background: none;
 }
 
 .navbar-toggler-icon {
