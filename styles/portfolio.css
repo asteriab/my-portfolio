@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+.row {
+  justify-content: space-evenly;
+}
+
 .navbar {
   background-color: var(--header-color);
   font-family: var(--main-font);
@@ -107,6 +111,11 @@ ul {
   font-weight: bold;
 }
 
+.introduction h3 {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
 h1 {
   font-size: 76px;
   font-family: var(--head-font);
@@ -160,11 +169,13 @@ h2 {
   width: 350px;
 }
 
-.projects {
+.projects,
+.skills {
   text-align: center;
 }
 
-.projects h2 {
+.projects h2,
+.skills h2 {
   font-family: var(--head-font);
   font-weight: 900;
   font-size: 56px;
@@ -186,8 +197,18 @@ h2 {
   padding: 0;
   list-style-type: none;
   display: inline;
-  font-size: 72px;
-  color: var(--secondary-color);
+  font-size: 50px;
+  color: #7BDDFD;
+}
+
+.skills span {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.my-photo {
+  width: 350px;
 }
 
 @media (max-width:767px) {
@@ -195,7 +216,8 @@ h2 {
     font-size: 56px;
   }
 
-  .projects h2 {
+  .projects h2,
+  .skills h2 {
     font-size: 50px;
   }
 }
