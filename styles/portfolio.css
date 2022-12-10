@@ -105,6 +105,10 @@ ul {
   margin: 25vh 0;
 }
 
+.projects-heading {
+  margin: 15vh 0;
+}
+
 .introduction p {
   font-size: 28px;
   font-family: var(--head-font);
@@ -183,14 +187,15 @@ h2 {
   padding: 30px;
 }
 
-.project h4 {
-  padding: 20px;
+.project h4,
+.project p {
+  padding: 10px;
   font-family: var(--main-font);
   font-weight: bold;
 }
 
 .project-img {
-  width: 400px;
+  width: 450px;
 }
 
 .skills li {
