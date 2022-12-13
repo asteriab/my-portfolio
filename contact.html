@@ -19,14 +19,14 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-    <title>Mariana Balanchuk - Front-End Developer</title>
+    <title>Mariana Balanchuk - Contact Me</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">MB</a>
+                <a class="navbar-brand" href="/index.html">MB</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html">About</a>
@@ -43,7 +43,7 @@
                             <a class="nav-link" href="/work.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
+                            <a class="nav-link active">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -56,46 +56,34 @@
 
         <div class="col-11">
             <div class="container">
-
-                <div class="introduction col-md-7">
-                    <p>Hi, I'am</p>
-                    <h1>Mariana Balanchuk</h1>
-                    <h2>Front-End developer from Ukraine</h2>
-                    <button class="button">Download CV</button>
-                </div>
-                <div class="col-md-4">
-                    <img src="/images/main-image.svg" class="main-img img-fluid" alt="">
+                <div class="projects-heading col-md-7">
+                    <h1>Contact Me</h1>
+                    <h2>Let's get in touch!</h2>
                 </div>
 
 
-                <div class="projects container" id="projects">
-                    <h2 class="col-12">My Projects</h2>
-
-                    <ul class="col-12 row">
-                        <li class="col-md-6 project">
-                            <a href="https://graceful-kleicha-63eb8d.netlify.app/" target="_blank"><img
-                                    src="/images/pizza-landing-page.png" class="project-img img-fluid" alt=""></a>
-                            <h4>Pizza Landing Page</h4>
-                            <button class="view-button"><a href="https://graceful-kleicha-63eb8d.netlify.app/"
-                                    target="_blank">View
-                                    Project</a>
-                            </button>
+                <form action="mailto:mariana.balanchuk@gmail.com" class="col-md-7">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Enter your name">
                         </li>
-                        <li class="col-md-6 project">
-                            <a href="https://frabjous-meringue-af1318.netlify.app/" target="_blank"><img
-                                    src="/images/weather-app.png" class="project-img img-fluid" alt=""></a>
-                            <h4>Weather App</h4>
-                            <button class="view-button"> <a href="https://frabjous-meringue-af1318.netlify.app/"
-                                    target="_blank">View
-                                    Project</a></button>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Enter your email">
                         </li>
-
+                        <li>
+                            <label for="message">Message:</label>
+                            <textarea id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit" class="view-button">Send</button>
+                        </li>
                     </ul>
-                </div>
+                </form>
 
             </div>
         </div>
-
         <div class="social-media col-1">
             <a href="https://www.instagram.com/mariana.balanchuk/" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a>
