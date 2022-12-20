@@ -100,8 +100,10 @@ ul {
 .social-media-big {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   font-size: 50px;
   gap: 25px;
+  margin: 15px;
 }
 
 .social-media a,
